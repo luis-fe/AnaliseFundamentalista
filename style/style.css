@@ -1,0 +1,46 @@
+.container {
+    display: flex; /* Torna o contêiner flexível */
+}
+
+
+
+.Menu_Indices {
+    width: 150px;
+    height: 700px;
+    background: #d5ecd0;
+    flex-shrink: 0;
+    font-size: 10px;
+    color: black;
+    text-align: center;    
+}
+
+.navegacao {
+    background: #181717;
+    width: 1460px;
+    height: 51px;
+    flex-shrink: 0;
+    text-align: center;
+    color: white;
+    
+}
+
+.titulo2 {
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center; /* Adiciona esta linha para centralizar o texto */
+}
+
+.Menu_Indices button {
+    cursor: pointer;
+   
+    width: 100px;
+    height: 30px;
+    padding: 1px 1px;
+    font-size: 12px;
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+
+
