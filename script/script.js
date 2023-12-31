@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     botaoIPCA.addEventListener('click', function() {
         // Chame a função para trocar o conteúdo para grafico.html
         trocarConteudo('grafico.html',"530","1260");
-        trocarTitulo('');
+        trocarTitulo('Variação IPCA - Indice de Preço ao Consumidor Amplo');
     });
 
     // Adicione um ouvinte de evento de clique ao botão IPCA
@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicione um ouvinte de evento de clique ao botão Outro
     botaoOutro.addEventListener('click', function() {
         // Chame a função para trocar o conteúdo para outro-arquivo.html
-        trocarConteudo('margemBruta.html',"100","100");
+        trocarConteudo('margemBruta.html',100,100);
         trocarTitulo('');
     });
 
         // Adicione um ouvinte de evento de clique ao botão Outro
         botaoPIB.addEventListener('click', function() {
             // Chame a função para trocar o conteúdo para outro-arquivo.html
-            trocarConteudo('pib.html',"300","800");
+            trocarConteudo('pib.html',300,800);
             trocarTitulo('Crescimento Trimestral do PIB');
         });
 });

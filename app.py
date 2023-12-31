@@ -27,7 +27,7 @@ if response.status_code == 200:
     df['taxa'] = pd.to_numeric(df['taxa'])
 
     # Cria um gráfico de linha interativo
-    fig = px.line(df, x='periodo', y='taxa', title='Variação Índice IPCA:',markers=True, text='taxa')
+    fig = px.line(df, x='periodo', y='taxa', title='',markers=True, text='taxa')
 
     # Define o valor mínimo do eixo y como 0
     fig.update_yaxes(range=[0, df['taxa'].max() + 1])
