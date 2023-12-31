@@ -29,7 +29,7 @@ selic_meta['data'] = selic_meta['data'].dt.strftime('%Y%m')
 selic_meta['valor'] = pd.to_numeric(selic_meta['valor'])
 
 # Cria um gráfico de linha interativo
-fig = px.line(selic_meta, x='data', y='valor', title='Variação Taxa Selic:', markers=True, text='valor')
+fig = px.line(selic_meta, x='data', y='valor', markers=True, text='valor')
 # Define o valor mínimo do eixo y como 0
 fig.update_yaxes(range=[0, selic_meta['valor'].max() + 1])
 
