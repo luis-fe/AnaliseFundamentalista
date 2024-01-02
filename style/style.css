@@ -2,7 +2,17 @@
     display: flex; /* Torna o contêiner flexível */
 }
 
+.container2 {
+    display: flex; /* Torna o contêiner flexível */
+}
 
+.imagemBSC {
+    width: 40%;
+}
+
+.textoBSC {
+width: 60%;
+}
 
 .Menu_Indices {
     width: 150px;

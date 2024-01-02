@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var botaoOutro = document.getElementById('botaoOutro');
     var botaoSELIC = document.getElementById('botaoSELIC');
     var botaoPIB = document.getElementById('botaoPIB');
+    var botaoPDCA = document.getElementById('botaoPDCA');
+    var botaoBSC = document.getElementById('botaoBSC');
     var iframeGrafico = document.getElementById('graficoFrame');
     var tituloApresentacao = document.getElementById('tituloApresentacao');
 
@@ -12,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         iframeGrafico.src = src;
         iframeGrafico.style.width = largura;
         iframeGrafico.style.height = altura;
-    }
+    };
 
     // Função para trocar o Titulo
     function trocarTitulo(titulo) {
         tituloApresentacao.innerText = titulo;
-    }
+    };
 
     // Adicione um ouvinte de evento de clique ao botão IPCA
     botaoIPCA.addEventListener('click', function() {
@@ -41,10 +43,24 @@ document.addEventListener('DOMContentLoaded', function() {
         trocarTitulo('');
     });
 
-        // Adicione um ouvinte de evento de clique ao botão Outro
-        botaoPIB.addEventListener('click', function() {
+
+
+   // Adicione um ouvinte de evento de clique ao botão Outro
+   botaoPIB.addEventListener('click', function() {
             // Chame a função para trocar o conteúdo para outro-arquivo.html
             trocarConteudo('pib.html',300,800);
             trocarTitulo('Crescimento Trimestral do PIB');
         });
+
+   botaoPDCA.addEventListener('click', function() {
+    trocarConteudo('PDCA.html','300','300');
+    trocarTitulo('');
+   });
+
+   botaoBSC.addEventListener('click', function() {
+    trocarConteudo('BSC.html','300','300');
+    trocarTitulo('BALANCED SCORECARD - BSC');
+   });
+
+
 });
