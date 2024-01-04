@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var botaoPDCA = document.getElementById('botaoPDCA');
     var botaoBSC = document.getElementById('botaoBSC');
     var botaoITIL = document.getElementById('botaoITIL');
+    var botaoCOBIT = document.getElementById('botaoCOBIT');
     var iframeGrafico = document.getElementById('graficoFrame');
     var tituloApresentacao = document.getElementById('tituloApresentacao');
 
@@ -66,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
    botaoITIL.addEventListener('click', function() {
     trocarConteudo('itil_v3.html','500','500');
     trocarTitulo('ITIL - V3');
+   });
+
+   botaoCOBIT.addEventListener('click', function() {
+    trocarConteudo('cobit.html','500','500');
+    trocarTitulo('COBIT 5');
    });
 
 });
