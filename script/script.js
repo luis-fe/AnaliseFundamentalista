@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var botaoPIB = document.getElementById('botaoPIB');
     var botaoPDCA = document.getElementById('botaoPDCA');
     var botaoBSC = document.getElementById('botaoBSC');
+    var botaoITIL = document.getElementById('botaoITIL');
     var iframeGrafico = document.getElementById('graficoFrame');
     var tituloApresentacao = document.getElementById('tituloApresentacao');
 
@@ -62,5 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
     trocarTitulo('BALANCED SCORECARD - BSC');
    });
 
+   botaoITIL.addEventListener('click', function() {
+    trocarConteudo('itil_v3.html','500','500');
+    trocarTitulo('ITIL - V3');
+   });
 
 });
